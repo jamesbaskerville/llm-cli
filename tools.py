@@ -28,10 +28,15 @@ def write_code_to_file(code, filename):
     except Exception as e:
         return f"Error writing to file: {str(e)}"
 
+def end_program():
+    os._exit(0)
+
 def use_tool(tool_name, tool_input):
     if tool_name == "run_bash_command":
         return run_bash_command(tool_input["command"])
     elif tool_name == "write_code_to_file":
         return write_code_to_file(tool_input["code"], tool_input["filename"])
+    elif tool_name == "end_program":
+        return end_program()
     else:
         return f"Unknown tool: {tool_name}"

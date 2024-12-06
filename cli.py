@@ -54,6 +54,15 @@ TOOLS = [
             },
             "required": ["code", "filename"]
         }
+    },
+    {
+        "name": "end_program",
+        "description": "Exit the program. Only use if you're sure the user wants to exit",
+        "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+        }
     }
 ]
 
