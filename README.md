@@ -20,6 +20,7 @@ pip install -r requirements.txt
 ## Usage
 
 ```bash
+export ANTHROPIC_API_KEY=<YOUR_API_KEY>
 llshell
 ```
 
